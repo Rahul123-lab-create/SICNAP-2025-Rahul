@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
 
 \title{SICNAP 2025 Internship Report}
 \author{Rahul Adhikari}
@@ -13,15 +15,68 @@
 This is a brief report of the tasks completed during the Summer Internship in Computational Nuclear Astrophysics (SICNAP) 2025.
 
 \section{Part A: Bash and Linux}
-Completed all shell tasks including script creation, file editing with Vim, and using Git Bash effectively.
+Completed all shell tasks including script creation and file editing with Vim. Below are the key actions performed:
+
+\begin{itemize}
+  \item Created directories and managed files with \texttt{mkdir}, \texttt{ls}, and \texttt{rm}
+  \item Used commands like \texttt{grep}, \texttt{chmod}, \texttt{alias}, \texttt{date}, and \texttt{tar}
+  \item Wrote and executed \texttt{.sh} scripts to automate tasks
+\end{itemize}
 
 \section{Part B: Python Programming} 
-Practiced data types, control flow, functions, and files handling using Python.
+Practiced data types, control flow, functions, and file handling using Python.
 
-\section{Part C: Git and Github}
-Worked with branches, pushed to remote respiratories, used stash and branch protection.
+\section{Part C: Git and GitHub}
+Worked with branches, pushed to remote repositories, used stash and branch protection.
 
-\section{Part D: Latex}
-THis is document itself is created using Latex.
+\section{Part D: LaTeX}
+This report itself is created using LaTeX. It includes text formatting, equations, tables, and images.
 
-\end{document}  
+See Table~\ref{tab:tools} for a summary of tools used during the internship.  
+Figure~\ref{fig:sicnap} shows the tools used in this internship.
+
+\begin{table}[h!]
+\centering
+\caption{Comparison of Tools Used in SICNAP}
+\label{tab:tools}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Tool} & \textbf{Use Case} & \textbf{Environment} \\
+\hline
+Bash   & File handling, scripting     & Git Bash \\
+Python & Programming logic            & VS Code \\
+Git    & Version control              & GitHub \\
+LaTeX  & Report writing               & Overleaf/VS Code \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{sicnap.png}
+\caption{Overview of Tools in SICNAP}
+\label{fig:sicnap}
+\end{figure}
+
+\section*{Mathematical Equations}
+
+This equation uses the \texttt{equation} environment:
+
+\begin{equation}
+E = mc^2
+\label{eq:einstein}
+\end{equation}
+
+As shown in Equation~\ref{eq:einstein}, energy is proportional to mass.
+
+This pair of equations uses the \texttt{align} environment:
+
+\begin{align}
+a^2 + b^2 &= c^2 \\
+x &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\label{eq:maths}
+\end{align}
+
+See Equation~\ref{eq:maths} for more examples.
+
+\end{document}
